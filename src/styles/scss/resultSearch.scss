@@ -1,0 +1,86 @@
+$spacing32: 32px;
+$spacing16: 16px;
+
+//Color
+$grey_100: #333;
+$grey_75: #666;
+$grey_50: #999;
+$grey_25: #EEE;
+$white: #FFF;
+
+.results {
+	.container {
+		background-color: $white;
+		padding: 0 $spacing16;
+	}
+
+	.item {
+		border-bottom: 1px solid $grey_25;
+		cursor: pointer;
+		overflow: hidden;
+		padding: $spacing16 0;
+
+		.left {
+			float: left;
+
+			.imgPreview {
+				display: inline-block;
+		    border-radius: 4px;
+		    height: 180px;
+		    width: 180px;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    background-position: center;
+			}
+
+			.details {
+				display: inline-block;
+				margin-left: $spacing16;
+    			vertical-align: top;
+
+    			.price {
+    				font-size: 24px;
+    				margin-bottom: $spacing32;
+
+						img {
+							padding: 0 0 0 10px;
+						}
+
+    				&.envio {
+    					&:after {
+    						background: url('/images/ic_shipping.png');
+    						content:'';
+    						display: inline-block;
+    						height: 18px;
+    						margin-left: 8px;
+    						position: relative;
+    						width: 18px;
+    					}
+    				}
+    			}
+
+    			p {
+							color: $grey_75;
+						  font-size: 18px;
+	    				line-height: 24px;
+	    				max-width: 400px;
+	    				text-transform: capitalize;
+    			}
+			}
+		}
+
+		.right {
+			float: right;
+			min-width: 150px;
+
+			p {
+				color: $grey_75;
+				font-size: 12px;
+			}
+		}
+
+		&:after{
+			clear: both;
+		}
+	}
+}

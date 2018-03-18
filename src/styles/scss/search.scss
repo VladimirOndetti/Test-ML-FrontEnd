@@ -1,0 +1,45 @@
+$spacing24: 24px;
+$spacing12: 12px;
+$searchWidth: 42px;
+$logoWidth: 53px;
+$searchWidth: 42px;
+
+.search {
+	background-color: #FFE600;
+	padding: 8px 0 6px;
+
+	input {
+	    border: 0;
+	    border-radius: 4px 0 0 4px;
+	    display: inline-block;
+			height: 36px;
+	    margin: 0 0 0 $spacing24;
+	    padding: 0 $spacing12;
+	    vertical-align: top;
+	    width: calc(100% - #{$searchWidth} - #{$logoWidth} - #{$spacing12} - #{$spacing12} - #{$spacing24});
+
+	    &:active,
+	    &:focus {
+	    	border: 0;
+	    	outline: 0;
+	    }
+	}
+
+	.btn-search {
+	    background-color: #eee;
+		border-radius: 0 4px 4px 0;
+		cursor: pointer;
+		display: inline-block;
+	    height: 36px;
+	    position: relative;
+	    vertical-align: top;
+	    width: $searchWidth;
+
+	    img {
+	    	left: 50%;
+	    	position: absolute;
+	    	top: 50%;
+	    	transform: translate(-50%,-50%);
+	    }
+	}
+}

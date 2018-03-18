@@ -1,0 +1,25 @@
+{
+  "presets": ["react", "es2015", "stage-0"],
+  "env": {
+     "production": {
+       "plugins": [
+         "transform-remove-console",
+         "transform-remove-debugger",
+         ["transform-react-remove-prop-types", {"mode": "wrap"}],
+         "transform-react-jsx-img-import",
+         "transform-undefined-to-void",
+         "transform-minify-booleans",
+         "transform-member-expression-literals",
+         "transform-property-literals",
+         "transform-react-constant-elements",
+         "transform-class-properties",
+         "transform-merge-sibling-variables"
+       ]
+     }
+  },
+  "plugins": [
+    "react-html-attrs",
+    "transform-decorators-legacy",
+    "transform-react-inline-elements"  
+  ]
+}

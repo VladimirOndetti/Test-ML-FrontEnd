@@ -1,0 +1,40 @@
+$spacing8: 8px;
+$spacing16: 16px;
+
+.breadcrumb {
+	padding: $spacing16 0;
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			color: #666666;
+			display: inline-block;
+			font-size: 14px;
+			margin-left: $spacing8;
+
+			&:after {
+				content: '>';
+				margin-left: $spacing8;
+				position: relative;
+			}
+
+			&:last-child {
+				font-weight: bold;
+
+				&:after {
+					content: none;
+				}
+			}
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:hover {
+				cursor: default;
+			}
+		}
+	}
+}
